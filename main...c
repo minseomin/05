@@ -5,16 +5,32 @@
 
 int main(int argc, char *argv[]) {
 	
-	int sum = 0;// 누적으로 더할거니까 초기화 필요  
-	int x;
-	int i;
+	int x,y;
+	char op;
+	int result;
 	
-	printf("input a number : ");
-	scanf("%d",&x);
+	printf("enter the calculation : ");
+	scanf("%d %c %d", &x, &op, &y);
 	
-	for (i=0; i<=x ; i++)
-		sum = sum + i ;
-	
-	printf("the result is : %i\n", sum); 
+	switch(op)
+	{	
+		case '+':
+			result = x+y;
+			break;
+			
+		case '-':
+			result = x-y;
+			break;
+			
+		case '*':
+			result = x*y;
+			break;
+			
+		case '/':
+			result = x/y;
+			break;
+			
+	}
+	printf( "= %d\n",result );
 	return 0;
 }
