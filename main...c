@@ -7,17 +7,13 @@ int main(int argc, char *argv[]) {
 	
 	int x;
 	
-	printf("정수 하나를 입력하세요 : ");
+	printf("정수를 하나 입력하세요 : ");
 	scanf("%d",&x);
 	
-	if (x>0)
-	printf(x);
-	
-	else if (x<0)
-	printf(-x);
-	 
-	else
-	print(0);
+	if (x<0)
+		x=-1*x;
+		
+	printf("절댓값은 %i 입니다.\n",x);
 	
 	return 0;
 }
