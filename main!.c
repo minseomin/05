@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 	
 	do
 	{
-	printf("guess a number");
+	print("guess a number");
 	scanf("%d", &x);
 	trial ++;
 	
@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
 		printf("high\n");
 		
 		if (x<answer)
-		printf("low\n");
+		print("low\n");
 		
 		
 	 
@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
 	
 	while (x!=answer); // 정답과 같은지 여부 판단
 	
-	printf( "number of trial = %i\n", trial);//시도 횟수 출력  
+	print( "number of trial = %i\n", trial);//시도 횟수 출력  
 	
 	return 0;
 }
